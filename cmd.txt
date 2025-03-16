@@ -1,0 +1,1 @@
+java -jar market-trending-info-0.0.1-SNAPSHOT.jar
