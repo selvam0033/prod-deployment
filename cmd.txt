@@ -1,5 +1,5 @@
 create folder Stock on the desktop
-keep here the market-trending-info-0.0.1-SNAPSHOT.jar file
-create one more folder media and keep here the siren-alert-96052 and stock.html file 
-open cmd go to desktop/stock location run below the comment and watch stock.html in the chrome browser
-java -jar market-trending-info-0.0.1-SNAPSHOT.jar
+keep here the market-trending-info-0.0.2-SNAPSHOT.jar file
+create one more folder media and stay here the siren-alert-96052 and stock.html file 
+open cmd go to desktop/stock location run below the comment and watch stock.html in the Chrome browser
+java -jar market-trending-info-0.0.2-SNAPSHOT.jar
