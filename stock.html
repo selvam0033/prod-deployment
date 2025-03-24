@@ -4,7 +4,7 @@
 let counter =0;
 setInterval(function() {
 counter++;
-if (counter == 30) {
+if (counter == 60) {
 counter=0;
 stock();
 crypto();
@@ -28,20 +28,16 @@ xhttpr.onload = ()=> {
            header.insertCell().textContent = 'Price'
            header.insertCell().textContent = 'TrendingTime'
            header.insertCell().textContent = 'Status'
-           header.insertCell().textContent = 'Date'
+          header.insertCell().textContent = 'Date And Timestamp'
 response.forEach(obj => {    
        let row = myTable.insertRow()        
            row.insertCell().textContent = obj.name
            row.insertCell().textContent = obj.price
            row.insertCell().textContent = obj.trendingTime
            row.insertCell().textContent = obj.trending
-           row.insertCell().textContent = obj.currentDate       
+           row.insertCell().textContent = obj.currentDate   
     }); 
-} else {
-    const header = document.getElementById('dynamicHeader'); 
-	 header.innerHTML = 'No stocks found'; 
-}	
-	
+     } 
    } else {  
        console.log('Error');   
    }
@@ -65,7 +61,7 @@ xhttpr.onload = ()=> {
            header.insertCell().textContent = 'Price'
            header.insertCell().textContent = 'TrendingTime'
            header.insertCell().textContent = 'Status'
-           header.insertCell().textContent = 'Date'
+           header.insertCell().textContent = 'Date And Timestamp'
 	  
 response.forEach(obj => {    
        let row = myTable.insertRow()        
@@ -73,12 +69,9 @@ response.forEach(obj => {
            row.insertCell().textContent = obj.price
            row.insertCell().textContent = obj.trendingTime
            row.insertCell().textContent = obj.trending
-           row.insertCell().textContent = obj.currentDate       
+           row.insertCell().textContent = obj.currentDate 	   
     });      
-	} else {
-	 const header = document.getElementById('dynamicHeader'); 
-	 header.innerHTML = 'No crypto found'; 
-	}
+	} 
    } else {   
         console.log('Error');      
    }
